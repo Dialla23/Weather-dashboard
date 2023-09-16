@@ -1,0 +1,9 @@
+#primary-div{
+    display: flex;
+}
+#input-details{
+    flex : 30% ;
+}
+#singleday-data{
+    flex: 70%
+}
