@@ -26,8 +26,26 @@ const getSingleDayData= async (city)=>{
         let main = document.createElement('p')
         main.innerHTML= data.main.temp
         singleDayDiv.append(main)
+
+        let clouds = document.createElement('p')
+        clouds.innerHTML=data.clouds.all
+        singleDayDiv.append(clouds)
+
+        let coord = document.createElement('p')
+        coord.innerHTML=data.coord.lon
+        singleDayDiv.append(coord)
+
+        let sys = document.createElement('p')
+        sys.innerHTML=data.sys.type
+        singleDayDiv.append(sys)
+
+        let wind = document.createElement('p')
+        wind.innerHTML=data.wind.speed
+        singleDayDiv.append(wind)
+
         return data 
         
+       
     }) 
 }
 
